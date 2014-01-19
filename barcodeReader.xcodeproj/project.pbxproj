@@ -501,7 +501,7 @@
 				INFOPLIST_FILE = "barcodeReader/barcodeReader-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/kimsw2/Dev/iphone_dev/barcodeReader/ZBarSDK,
+					"ZBarSDK/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -518,7 +518,7 @@
 				INFOPLIST_FILE = "barcodeReader/barcodeReader-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/kimsw2/Dev/iphone_dev/barcodeReader/ZBarSDK,
+					"ZBarSDK/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -586,6 +586,7 @@
 				6B3FEAC218894A8200E96255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B3FEAC318894A8200E96255 /* Build configuration list for PBXNativeTarget "barcodeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +595,7 @@
 				6B3FEAC518894A8200E96255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
