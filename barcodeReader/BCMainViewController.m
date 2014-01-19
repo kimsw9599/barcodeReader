@@ -31,6 +31,10 @@
     self.readerView.tracksSymbols=YES;
     self.readerView.readerDelegate = self;
     
+    UIImageView *overlayImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"overlaygraphic.png"]];
+    [overlayImageView setFrame:CGRectMake(30, 100, 260, 200)];
+    [[self view] addSubview:overlayImageView];
+    
     if(TARGET_IPHONE_SIMULATOR) {
         self.cameraSim = [[ZBarCameraSimulator alloc]
                      initWithViewController: self];
@@ -86,7 +90,7 @@
         self.resultText.text = sym.data;
         
         [ToastView showToastInParentView:self.view withText:sym.data withDuaration:5.0];
-
+        
         break;
     }
 }
