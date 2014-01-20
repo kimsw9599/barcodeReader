@@ -22,7 +22,7 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" id="8z6-Qx-XHD">
-                    <rect key="frame" x="35" y="35" width="250" height="30"/>
+                    <rect key="frame" x="35" y="25" width="250" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

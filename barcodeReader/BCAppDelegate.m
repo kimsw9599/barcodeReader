@@ -18,6 +18,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [ZBarReaderView class];
     BCMainViewController *vc=[[BCMainViewController alloc] initWithNibName:@"BCMainViewController" bundle:nil];
+//    vc.returnScheme=self.returnScheme;
     self.window.rootViewController=vc;
     
     [self.window makeKeyAndVisible]; 
@@ -53,10 +54,10 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
 	// 어플 자신이 호출된 경우에 얼럿창 띄우기
-	NSString *strURL = [url absoluteString];
+	self.returnScheme = [url absoluteString];
     
 	UIAlertView *alertView= [[UIAlertView alloc] initWithTitle:@"call message"
-                                                       message:strURL
+                                                       message:self.returnScheme
                                                       delegate:nil
                                              cancelButtonTitle:@"OK" otherButtonTitles:nil];
     

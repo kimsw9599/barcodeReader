@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) IBOutlet ZBarReaderView *readerView;
 @property (nonatomic, strong) ZBarCameraSimulator *cameraSim;
-@property (nonatomic, retain) IBOutlet UITextField *resultText;
+@property (nonatomic, strong) IBOutlet UITextField *resultText;
+@property (nonatomic, strong) UIImageView *overlayImageView;
+@property (nonatomic, strong) NSString *returnScheme;
 
 @end
